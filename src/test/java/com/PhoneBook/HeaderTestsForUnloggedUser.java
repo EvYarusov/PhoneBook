@@ -11,9 +11,7 @@ public class HeaderTestsForUnloggedUser extends TestBase {
         if (!isElementPresentByLocator(
                 By.cssSelector("div.navbar-component_nav__1X_4m a[href='/login']"))
         ) {
-            driver.findElement(
-                    By.xpath("//button[contains(.,'Sign Out')]")
-            ).click();
+            clickOnSignOutButton();
         }
     }
     @Test
