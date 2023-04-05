@@ -1,23 +1,23 @@
-package com.PhoneBook;
+package com.PhoneBook.tests;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class HeaderTestsForUnloggedUser extends TestBase {
+public class UnloggedUserHeaderTests extends TestBase {
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isElementPresentByLocator(
+        if (!app.getHeader().isElementPresentByLocator(
                 By.cssSelector("div.navbar-component_nav__1X_4m a[href='/login']"))
         ) {
-            clickOnSignOutButton();
+            app.getHeader().clickOnSignOutButton();
         }
     }
     @Test
     public void checkHeaderLogoTest() {
         Assert.assertTrue(
-                isElementPresentByLocator(
+                app.getHeader().isElementPresentByLocator(
                         By.xpath("//div[@class='navbar-component_nav__1X_4m']/h1[contains(.,'PHONEBOOK')]")
                 )
         );
@@ -25,7 +25,7 @@ public class HeaderTestsForUnloggedUser extends TestBase {
     @Test
     public void checkHeaderHomeLinkTest() {
         Assert.assertTrue(
-                isElementPresentByLocator(
+                app.getHeader().isElementPresentByLocator(
                         By.cssSelector("div.navbar-component_nav__1X_4m a[href='/home']")
                 )
         );
@@ -33,7 +33,7 @@ public class HeaderTestsForUnloggedUser extends TestBase {
     @Test
     public void checkHeaderAboutLinkTest() {
         Assert.assertTrue(
-                isElementPresentByLocator(
+                app.getHeader().isElementPresentByLocator(
                         By.cssSelector("div.navbar-component_nav__1X_4m a[href='/about']")
                 )
         );
@@ -41,7 +41,7 @@ public class HeaderTestsForUnloggedUser extends TestBase {
     @Test
     public void checkHeaderLoginLinkTest() {
         Assert.assertTrue(
-                isElementPresentByLocator(
+                app.getHeader().isElementPresentByLocator(
                         By.cssSelector("div.navbar-component_nav__1X_4m a[href='/login']")
                 )
         );
