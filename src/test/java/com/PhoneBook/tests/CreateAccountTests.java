@@ -1,5 +1,6 @@
 package com.PhoneBook.tests;
 
+import com.ait.phonebook.fw.DataProviderUser;
 import com.ait.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -31,6 +32,20 @@ public class CreateAccountTests extends TestBase {
 
         //verify Sign out button is displayed
         Assert.assertTrue(app.getHeader().isSignOutButtonPresent());
+    }
+    @Test(enabled = true, dataProvider = "addNewUserWithInvalidPasswordFromCSV",
+            dataProviderClass = DataProviderUser.class)
+    public void newUserRegistrationWithInvalidPasswordNegativeTest(User user) {
+
+        app.getHeader().clickOnLoginLink();
+
+        Assert.assertTrue(app.getUser().isLoginRegFormPresent());
+
+        app.getUser().fillLoginRegForm(user);
+
+        app.getUser().clickOnRegistrationButton();
+
+        Assert.assertTrue(app.getUser().isAlertPresent());
     }
 
 }

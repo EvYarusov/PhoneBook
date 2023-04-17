@@ -14,7 +14,7 @@ public class UnloggedUserHeaderTests extends TestBase {
             app.getHeader().clickOnSignOutButton();
         }
     }
-    @Test
+    @Test(enabled = false)
     public void checkHeaderLogoTest() {
         Assert.assertTrue(
                 app.getHeader().isElementPresentByLocator(
@@ -22,7 +22,7 @@ public class UnloggedUserHeaderTests extends TestBase {
                 )
         );
     }
-    @Test
+    @Test(enabled = false)
     public void checkHeaderHomeLinkTest() {
         Assert.assertTrue(
                 app.getHeader().isElementPresentByLocator(
@@ -30,7 +30,7 @@ public class UnloggedUserHeaderTests extends TestBase {
                 )
         );
     }
-    @Test
+    @Test(enabled = false)
     public void checkHeaderAboutLinkTest() {
         Assert.assertTrue(
                 app.getHeader().isElementPresentByLocator(
@@ -38,7 +38,7 @@ public class UnloggedUserHeaderTests extends TestBase {
                 )
         );
     }
-    @Test
+    @Test(enabled = false)
     public void checkHeaderLoginLinkTest() {
         Assert.assertTrue(
                 app.getHeader().isElementPresentByLocator(

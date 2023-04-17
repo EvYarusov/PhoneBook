@@ -43,7 +43,7 @@ public class RemoveContactTests extends TestBase {
         app.getContact().clickOnSaveButton();
     }
 
-    @Test
+    @Test(enabled = true)
     public void removeContactTest() {
         int sizeBefore = app.getContact().sizeOfContacts();
 

@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class HomePageTest extends TestBase {
-    @Test
+    @Test(enabled = true)
     public void openHomePageTest(){
         //verify to display Home Component form
         //isHomeComponentPresent();

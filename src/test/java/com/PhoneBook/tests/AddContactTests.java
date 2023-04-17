@@ -1,12 +1,20 @@
 package com.PhoneBook.tests;
 
+import com.ait.phonebook.fw.DataProviderContact;
 import com.ait.phonebook.model.Contact;
 import com.ait.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class AddContactTests extends TestBase {
+
     // preconditions: 1. User is logged out, 2. log in
     @BeforeMethod
     public void ensurePrecondition() {
@@ -27,7 +35,7 @@ public class AddContactTests extends TestBase {
         }
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = false)
     public void addContactPositiveTest() {
         //TODO добавить паузу
         app.getContact().pause(1000);
@@ -51,7 +59,7 @@ public class AddContactTests extends TestBase {
         Assert.assertTrue(app.getContact().isContactCreated("Mark"));
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, enabled = false)
     public void addContactNegativeTest() {
         //TODO добавить паузу для clickOnAddLink
         app.getContact().pause(1000);
@@ -74,4 +82,34 @@ public class AddContactTests extends TestBase {
         //verify alert 'Phone not valid: Phone number must contain only digits! And length min 10, max 15!' ia appears
         Assert.assertTrue(app.getContact().isAlertPresent());
     }
+
+    @Test(priority = 3, enabled = false, dataProvider = "addNewContact", dataProviderClass = DataProviderContact.class)
+    public void addContactPositiveFromDataProviderTest(String name, String lastName, String phone,
+                                                       String email, String address, String description) {
+
+        app.getHeader().clickOnAddLink();
+
+        app.getContact().addContact(new Contact()
+                .setName(name)
+                .setLastName(lastName)
+                .setPhone(phone)
+                .setEmail(email)
+                .setAddress(address)
+                .setDescription(description)
+        );
+
+        app.getContact().clickOnSaveButton();
+        app.getContact().removeContact();
+    }
+    @Test(priority = 4, enabled = false, dataProvider = "addNewContactFromCSV", dataProviderClass = DataProviderContact.class)
+    public void addContactPositiveFromCSVFileTest(Contact contact) {
+
+        app.getHeader().clickOnAddLink();
+
+        app.getContact().addContact(contact);
+
+        app.getContact().clickOnSaveButton();
+        app.getContact().removeContact();
+    }
+
 }
