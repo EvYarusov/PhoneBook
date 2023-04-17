@@ -1,5 +1,5 @@
 .gradle
-/build/
+#/build/
 
 setting.gradle
 
@@ -16,3 +16,4 @@ gradlew/
 *.properties
 *.iml
 *.log
+*.png
