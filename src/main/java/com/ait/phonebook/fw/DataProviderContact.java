@@ -32,7 +32,9 @@ public class DataProviderContact {
         while (line != null) {
 
             String[] split = line.split(",");
-
+            // TODO вопрос - не является ли излишней операция по созданию массива 'new Object[]'?
+            // ведь по сути нам нужен 'List' контактов. А так у нас выходит 'List' в котором лежат массивы
+            // с заполненной первой ячейкой!? или это надо для корректной работы Iterator?
             list.add(new Object[]{new Contact()
                     .setName(split[0])
                     .setLastName(split[1])
@@ -46,12 +48,4 @@ public class DataProviderContact {
 
         return list.iterator();
     }
-//    list.add(new Object[]{new Contact()
-//            .setName(split[0])
-//            .setLastName(split[1])
-//            .setPhone(split[2])
-//            .setEmail(split[3])
-//            .setAddress(split[4])
-//            .setDescription(split[5])}
-//            );
 }

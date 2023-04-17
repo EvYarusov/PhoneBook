@@ -12,7 +12,7 @@ public class LoginTests extends TestBase {
             app.getHeader().clickOnSignOutButton();
         }
     }
-    @Test(priority = 1, enabled = false)
+    @Test(priority = 1, enabled = true)
     public void loginRegisteredUserPositiveTest() {
         // click on Login link
         app.getHeader().clickOnLoginLink();
@@ -32,7 +32,7 @@ public class LoginTests extends TestBase {
         logger.info("User logged in. Actual result: " + app.getHeader().isSignOutButtonPresent() + ". Expected result: true");
     }
 
-    @Test(priority = 2, enabled = false)
+    @Test(priority = 2, enabled = true)
     public void loginRegisteredUserWithInvalidPasswordNegativeTest() {
         // click on Login link
         app.getHeader().clickOnLoginLink();
@@ -53,7 +53,7 @@ public class LoginTests extends TestBase {
         Assert.assertTrue(app.getUser().isAlertPresent());
     }
 
-    @Test(priority = 3, enabled = false)
+    @Test(priority = 3, enabled = true)
     public void loginRegisteredUserWithInvalidEmailNegativeTest() {
         //click on Login link
         app.getHeader().clickOnLoginLink();
@@ -73,7 +73,7 @@ public class LoginTests extends TestBase {
         // verify alert 'Wrong email or password' is appears
         Assert.assertTrue(app.getUser().isAlertPresent());
     }
-    @Test(priority = 4, enabled = false)
+    @Test(priority = 4, enabled = true)
     public void loginRegisteredUserWithoutPasswordNegativeTest() {
         //click on Login link
         app.getHeader().clickOnLoginLink();
