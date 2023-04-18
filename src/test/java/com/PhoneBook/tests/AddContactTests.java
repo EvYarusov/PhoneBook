@@ -35,7 +35,7 @@ public class AddContactTests extends TestBase {
         }
     }
 
-    @Test(priority = 1, enabled = false)
+    @Test(priority = 1, enabled = true)
     public void addContactPositiveTest() {
         //TODO добавить паузу
         app.getContact().pause(1000);
@@ -59,7 +59,7 @@ public class AddContactTests extends TestBase {
         Assert.assertTrue(app.getContact().isContactCreated("Mark"));
     }
 
-    @Test(priority = 2, enabled = false)
+    @Test(priority = 2, enabled = true)
     public void addContactNegativeTest() {
         //TODO добавить паузу для clickOnAddLink
         app.getContact().pause(1000);
@@ -83,7 +83,7 @@ public class AddContactTests extends TestBase {
         Assert.assertTrue(app.getContact().isAlertPresent());
     }
 
-    @Test(priority = 3, enabled = false, dataProvider = "addNewContact", dataProviderClass = DataProviderContact.class)
+    @Test(priority = 3, enabled = true, dataProvider = "addNewContact", dataProviderClass = DataProviderContact.class)
     public void addContactPositiveFromDataProviderTest(String name, String lastName, String phone,
                                                        String email, String address, String description) {
 
@@ -101,7 +101,7 @@ public class AddContactTests extends TestBase {
         app.getContact().clickOnSaveButton();
         app.getContact().removeContact();
     }
-    @Test(priority = 4, enabled = false, dataProvider = "addNewContactFromCSV", dataProviderClass = DataProviderContact.class)
+    @Test(priority = 4, enabled = true, dataProvider = "addNewContactFromCSV", dataProviderClass = DataProviderContact.class)
     public void addContactPositiveFromCSVFileTest(Contact contact) {
 
         app.getHeader().clickOnAddLink();

@@ -15,7 +15,7 @@ public class CreateAccountTests extends TestBase {
         }
     }
 
-    @Test(enabled = false) //второй раз уже не сможем зарегистрировать пользователя
+    @Test(priority = 1, enabled = true) //второй раз уже не сможем зарегистрировать пользователя
     public void newUserRegistrationPositiveTest() {
         // click on Login link
         app.getHeader().clickOnLoginLink();
@@ -33,7 +33,7 @@ public class CreateAccountTests extends TestBase {
         //verify Sign out button is displayed
         Assert.assertTrue(app.getHeader().isSignOutButtonPresent());
     }
-    @Test(enabled = true, dataProvider = "addNewUserWithInvalidPasswordFromCSV",
+    @Test(priority = 2, enabled = true, dataProvider = "addNewUserWithInvalidPasswordFromCSV",
             dataProviderClass = DataProviderUser.class)
     public void newUserRegistrationWithInvalidPasswordNegativeTest(User user) {
 

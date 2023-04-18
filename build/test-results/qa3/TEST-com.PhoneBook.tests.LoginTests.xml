@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.PhoneBook.tests.LoginTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-18T22:47:54" hostname="YARKO" time="3.272">
+  <properties/>
+  <testcase name="loginRegisteredUserWithInvalidPasswordNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="1.136"/>
+  <testcase name="loginRegisteredUserWithInvalidEmailNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="1.199"/>
+  <testcase name="loginRegisteredUserWithoutPasswordNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="0.895"/>
+  <system-out><![CDATA[03:47:54.764 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserWithInvalidPasswordNegativeTest with data: []
+03:47:55.942 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithInvalidPasswordNegativeTest
+03:47:55.942 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+03:47:55.945 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserWithInvalidEmailNegativeTest with data: []
+03:47:57.162 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithInvalidEmailNegativeTest
+03:47:57.162 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+03:47:57.165 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserWithoutPasswordNegativeTest with data: []
+03:47:58.080 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithoutPasswordNegativeTest
+03:47:58.080 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

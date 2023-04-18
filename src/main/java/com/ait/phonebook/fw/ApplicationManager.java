@@ -43,7 +43,7 @@ public class ApplicationManager {
     }
 
     public void init() {
-        System.err.close(); // если хотим убрать системные предупреждения
+        System.err.close();
 
         if (browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();

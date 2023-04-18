@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.PhoneBook.tests.AddContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-18T22:47:35" hostname="YARKO" time="3.138">
+  <properties/>
+  <testcase name="addContactNegativeTest" classname="com.PhoneBook.tests.AddContactTests" time="3.138"/>
+  <system-out><![CDATA[03:47:35.369 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactNegativeTest with data: []
+03:47:39.065 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactNegativeTest
+03:47:39.065 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

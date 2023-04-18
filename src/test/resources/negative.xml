@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="NegativeSuite1" verbose="1">
+    <test name="Package">
+        <classes>
+            <class name="com.PhoneBook.tests.AddContactTests">
+                <methods>
+                    <include name=".*Negative.*"/>
+                </methods>
+            </class>
+            <class name="com.PhoneBook.tests.CreateAccountTests">
+                <methods>
+                    <include name=".*Negative.*"/>
+                </methods>
+            </class>
+            <class name="com.PhoneBook.tests.LoginTests">
+                <methods>
+                    <include name=".*Negative.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

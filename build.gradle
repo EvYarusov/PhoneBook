@@ -41,3 +41,13 @@ task qa2(type: Test) {
         systemProperty 'browser', "${browser}"
     }
 }
+
+task qa3(type: Test) {
+    useTestNG() {
+        suites 'src/test/resources/negative.xml'
+    }
+
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+}
