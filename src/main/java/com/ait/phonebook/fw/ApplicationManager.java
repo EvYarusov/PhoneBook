@@ -52,6 +52,7 @@ public class ApplicationManager {
             logger.info("All test starts in Chrome browser");
 
         } else if (browser.equalsIgnoreCase("firefox")) {
+            System.setProperty("webdriver.firefox.driver","C:/TollsForQA/geckodriver.exe");
             driver = new FirefoxDriver();
             logger.info("All test starts in Firefox browser");
 
@@ -59,7 +60,7 @@ public class ApplicationManager {
             EdgeOptions options = new EdgeOptions();
             options.addArguments("remote-allow-origins=*");
             driver = new EdgeDriver(options);
-            logger.info("All test starts in EDGE browser");
+            logger.info("All test starts in Edge browser");
         }
 
 
