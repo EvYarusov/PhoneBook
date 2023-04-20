@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.PhoneBook.tests.UnloggedUserHeaderTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-19T08:58:40" hostname="YARKO" time="110.849">
+<testsuite name="com.PhoneBook.tests.UnloggedUserHeaderTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-20T13:00:12" hostname="YARKO" time="122.176">
   <properties/>
-  <testcase name="checkHeaderLogoTest" classname="com.PhoneBook.tests.UnloggedUserHeaderTests" time="0.012"/>
-  <testcase name="checkHeaderHomeLinkTest" classname="com.PhoneBook.tests.UnloggedUserHeaderTests" time="0.008"/>
-  <testcase name="checkHeaderAboutLinkTest" classname="com.PhoneBook.tests.UnloggedUserHeaderTests" time="0.01"/>
-  <testcase name="checkHeaderLoginLinkTest" classname="com.PhoneBook.tests.UnloggedUserHeaderTests" time="0.006"/>
-  <system-out><![CDATA[13:58:40.365 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test checkHeaderLogoTest with data: []
-13:58:40.387 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: checkHeaderLogoTest
-13:58:40.387 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:08.083 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: checkHeaderHomeLinkTest
-13:59:08.083 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:08.083 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserWithInvalidPasswordNegativeTest with data: []
-13:59:50.355 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: checkHeaderAboutLinkTest
-13:59:50.355 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:50.356 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserWithInvalidEmailNegativeTest with data: []
-14:00:31.225 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: checkHeaderLoginLinkTest
-14:00:31.225 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+  <testcase name="checkHeaderLogoTest" classname="com.PhoneBook.tests.UnloggedUserHeaderTests" time="0.0"/>
+  <testcase name="checkHeaderHomeLinkTest" classname="com.PhoneBook.tests.UnloggedUserHeaderTests" time="0.005"/>
+  <testcase name="checkHeaderAboutLinkTest" classname="com.PhoneBook.tests.UnloggedUserHeaderTests" time="0.0"/>
+  <testcase name="checkHeaderLoginLinkTest" classname="com.PhoneBook.tests.UnloggedUserHeaderTests" time="0.0"/>
+  <system-out><![CDATA[18:00:12.329 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test checkHeaderLogoTest with data: []
+18:00:12.348 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: checkHeaderLogoTest
+18:00:12.348 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:00:42.712 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: checkHeaderHomeLinkTest
+18:00:42.712 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:00:42.712 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserWithInvalidPasswordNegativeTest with data: []
+18:01:28.933 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: checkHeaderAboutLinkTest
+18:01:28.933 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:01:28.933 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserWithInvalidEmailNegativeTest with data: []
+18:02:14.524 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: checkHeaderLoginLinkTest
+18:02:14.524 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

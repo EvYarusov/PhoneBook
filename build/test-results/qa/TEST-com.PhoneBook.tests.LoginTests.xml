@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.PhoneBook.tests.LoginTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-19T08:58:40" hostname="YARKO" time="111.488">
+<testsuite name="com.PhoneBook.tests.LoginTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-20T13:00:12" hostname="YARKO" time="123.382">
   <properties/>
-  <testcase name="loginRegisteredUserPositiveTest" classname="com.PhoneBook.tests.LoginTests" time="0.53"/>
-  <testcase name="loginRegisteredUserWithInvalidPasswordNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="0.746"/>
-  <testcase name="loginRegisteredUserWithInvalidEmailNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="0.725"/>
-  <testcase name="loginRegisteredUserWithoutPasswordNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="0.645"/>
-  <system-out><![CDATA[13:58:40.387 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserPositiveTest with data: []
-13:58:40.917 [Test worker] INFO  com.PhoneBook.tests.TestBase -- User logged in. Actual result: true. Expected result: true
-13:58:40.918 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserPositiveTest
-13:58:40.918 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:08.835 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithInvalidPasswordNegativeTest
-13:59:08.835 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:51.088 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithInvalidEmailNegativeTest
-13:59:51.088 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:51.090 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromCSVFileTest with data: [`Contact`{name='Oliver', lastName='Kan', phone='98765432123', email='kan@gm.co', address='Berlin', description='goalkeeper'}]
-14:00:31.875 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithoutPasswordNegativeTest
-14:00:31.881 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+  <testcase name="loginRegisteredUserPositiveTest" classname="com.PhoneBook.tests.LoginTests" time="1.102"/>
+  <testcase name="loginRegisteredUserWithInvalidPasswordNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="1.443"/>
+  <testcase name="loginRegisteredUserWithInvalidEmailNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="1.467"/>
+  <testcase name="loginRegisteredUserWithoutPasswordNegativeTest" classname="com.PhoneBook.tests.LoginTests" time="1.19"/>
+  <system-out><![CDATA[18:00:12.348 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test loginRegisteredUserPositiveTest with data: []
+18:00:13.450 [Test worker] INFO  com.PhoneBook.tests.TestBase -- User logged in. Actual result: true. Expected result: true
+18:00:13.450 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserPositiveTest
+18:00:13.450 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:00:44.155 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithInvalidPasswordNegativeTest
+18:00:44.155 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:01:30.400 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithInvalidEmailNegativeTest
+18:01:30.400 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:01:30.400 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromCSVFileTest with data: [`Contact`{name='Oliver', lastName='Kan', phone='98765432123', email='kan@gm.co', address='Berlin', description='goalkeeper'}]
+18:02:15.745 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: loginRegisteredUserWithoutPasswordNegativeTest
+18:02:15.745 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[console.warn: LoginRecipes: "Falling back to a synchronous message for: https://telranedu.web.app."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://telranedu.web.app."
+]]></system-err>
 </testsuite>

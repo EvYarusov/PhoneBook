@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CreateAccountTests extends TestBase {
-    //precondition: user shulde be logged out
     @BeforeMethod
     public void ensurePrecondition() {
         if (!app.getHeader().isLoginLinkPresent()) {
@@ -15,22 +14,20 @@ public class CreateAccountTests extends TestBase {
         }
     }
 
-    @Test(priority = 1, enabled = true) //второй раз уже не сможем зарегистрировать пользователя
+    @Test(priority = 1, enabled = true)
     public void newUserRegistrationPositiveTest() {
-        // click on Login link
+
         app.getHeader().clickOnLoginLink();
-        // verify Registration form is displayed
+
         Assert.assertTrue(app.getUser().isLoginRegFormPresent());
-        // fill registration form
+
         app.getUser().fillLoginRegForm(new User()
                 .setEmail("manul-j@gmail.com")
                 .setPassword("Manul1234$")
         );
 
-        //click on Registration button
         app.getUser().clickOnRegistrationButton();
 
-        //verify Sign out button is displayed
         Assert.assertTrue(app.getHeader().isSignOutButtonPresent());
     }
     @Test(priority = 2, enabled = true, dataProvider = "addNewUserWithInvalidPasswordFromCSV",

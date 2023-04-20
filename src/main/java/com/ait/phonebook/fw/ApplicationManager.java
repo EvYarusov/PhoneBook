@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -52,7 +53,6 @@ public class ApplicationManager {
             logger.info("All test starts in Chrome browser");
 
         } else if (browser.equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.firefox.driver","C:/TollsForQA/geckodriver.exe");
             driver = new FirefoxDriver();
             logger.info("All test starts in Firefox browser");
 

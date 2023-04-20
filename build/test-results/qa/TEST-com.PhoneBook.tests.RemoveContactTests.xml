@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.PhoneBook.tests.RemoveContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-19T08:58:12" hostname="YARKO" time="1.733">
+<testsuite name="com.PhoneBook.tests.RemoveContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-20T12:59:45" hostname="YARKO" time="1.916">
   <properties/>
-  <testcase name="removeContactTest" classname="com.PhoneBook.tests.RemoveContactTests" time="1.733"/>
-  <system-out><![CDATA[13:58:10.882 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test removeContactTest with data: []
-13:58:14.685 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: removeContactTest
-13:58:14.685 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+  <testcase name="removeContactTest" classname="com.PhoneBook.tests.RemoveContactTests" time="1.916"/>
+  <system-out><![CDATA[17:59:41.687 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test removeContactTest with data: []
+17:59:47.777 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: removeContactTest
+17:59:47.777 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[console.warn: LoginRecipes: "Falling back to a synchronous message for: https://telranedu.web.app."
+]]></system-err>
 </testsuite>

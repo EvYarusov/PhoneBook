@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">44.814s</div>
+<div class="counter">49.381s</div>
 <p>duration</p>
 </div>
 </td>
@@ -69,6 +69,9 @@
 <li>
 <a href="#tab2">Standard output</a>
 </li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
@@ -76,15 +79,14 @@
 <a name="addContactPositiveFromCSVFileTest[1](`Contact`{name='Max', lastName='Rabbe', phone='98765432126', email='max@gm.co', address='Berlin', description='goalkeeper'})"></a>
 <h3 class="failures">addContactPositiveFromCSVFileTest[1](`Contact`{name='Max', lastName='Rabbe', phone='98765432126', email='max@gm.co', address='Berlin', description='goalkeeper'})</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a:nth-child(5)&quot;}
-  (Session info: chrome=112.0.5615.121)
+<pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: a:nth-child(5)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [600fd9be23d450593d476c081a5dd90c, findElement {using=css selector, value=a:nth-child(5)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\yarus\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49466/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 600fd9be23d450593d476c081a5dd90c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5e6c10db-70b7-4dea-8d00-a124055c2824, findElement {using=css selector, value=a:nth-child(5)}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:31914, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15592, moz:profile: C:\Users\yarus\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:31914/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5e6c10db-70b7-4dea-8d00-a124055c2824
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -103,7 +105,7 @@ Session ID: 600fd9be23d450593d476c081a5dd90c
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at app//com.ait.phonebook.fw.BaseHelper.click(BaseHelper.java:41)
 	at app//com.ait.phonebook.fw.HeaderHelper.clickOnAddLink(HeaderHelper.java:28)
-	at app//com.PhoneBook.tests.AddContactTests.addContactPositiveFromCSVFileTest(AddContactTests.java:107)
+	at app//com.PhoneBook.tests.AddContactTests.addContactPositiveFromCSVFileTest(AddContactTests.java:92)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,15 +159,14 @@ Session ID: 600fd9be23d450593d476c081a5dd90c
 <a name="addContactPositiveFromDataProviderTest[1](John2, Parker, 4567891231, JPa2@gm.com, Paris, forward)"></a>
 <h3 class="failures">addContactPositiveFromDataProviderTest[1](John2, Parker, 4567891231, JPa2@gm.com, Paris, forward)</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a:nth-child(5)&quot;}
-  (Session info: chrome=112.0.5615.121)
+<pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: a:nth-child(5)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [600fd9be23d450593d476c081a5dd90c, findElement {using=css selector, value=a:nth-child(5)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\yarus\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49466/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 600fd9be23d450593d476c081a5dd90c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5e6c10db-70b7-4dea-8d00-a124055c2824, findElement {using=css selector, value=a:nth-child(5)}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:31914, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15592, moz:profile: C:\Users\yarus\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:31914/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5e6c10db-70b7-4dea-8d00-a124055c2824
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -184,7 +185,7 @@ Session ID: 600fd9be23d450593d476c081a5dd90c
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at app//com.ait.phonebook.fw.BaseHelper.click(BaseHelper.java:41)
 	at app//com.ait.phonebook.fw.HeaderHelper.clickOnAddLink(HeaderHelper.java:28)
-	at app//com.PhoneBook.tests.AddContactTests.addContactPositiveFromDataProviderTest(AddContactTests.java:90)
+	at app//com.PhoneBook.tests.AddContactTests.addContactPositiveFromDataProviderTest(AddContactTests.java:74)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -238,15 +239,14 @@ Session ID: 600fd9be23d450593d476c081a5dd90c
 <a name="addContactPositiveTest"></a>
 <h3 class="failures">addContactPositiveTest</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a:nth-child(5)&quot;}
-  (Session info: chrome=112.0.5615.121)
+<pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: a:nth-child(5)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [600fd9be23d450593d476c081a5dd90c, findElement {using=css selector, value=a:nth-child(5)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\yarus\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49466}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49466/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 600fd9be23d450593d476c081a5dd90c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5e6c10db-70b7-4dea-8d00-a124055c2824, findElement {using=css selector, value=a:nth-child(5)}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:31914, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15592, moz:profile: C:\Users\yarus\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:31914/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5e6c10db-70b7-4dea-8d00-a124055c2824
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -265,7 +265,7 @@ Session ID: 600fd9be23d450593d476c081a5dd90c
 	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at app//com.ait.phonebook.fw.BaseHelper.click(BaseHelper.java:41)
 	at app//com.ait.phonebook.fw.HeaderHelper.clickOnAddLink(HeaderHelper.java:28)
-	at app//com.PhoneBook.tests.AddContactTests.addContactPositiveTest(AddContactTests.java:43)
+	at app//com.PhoneBook.tests.AddContactTests.addContactPositiveTest(AddContactTests.java:36)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -328,42 +328,42 @@ Session ID: 600fd9be23d450593d476c081a5dd90c
 </thead>
 <tr>
 <td class="success">addContactNegativeTest</td>
-<td class="success">2.057s</td>
+<td class="success">2.567s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">addContactPositiveFromCSVFileTest[0](`Contact`{name='Oliver', lastName='Kan', phone='98765432123', email='kan@gm.co', address='Berlin', description='goalkeeper'})</td>
-<td class="success">1.405s</td>
+<td class="success">2.722s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">addContactPositiveFromCSVFileTest[1](`Contact`{name='Max', lastName='Rabbe', phone='98765432126', email='max@gm.co', address='Berlin', description='goalkeeper'})</td>
-<td class="failures">12.011s</td>
+<td class="failures">12.007s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">addContactPositiveFromCSVFileTest[2](`Contact`{name='Tony', lastName='Cross', phone='98765432128', email='tony@gm.co', address='Berlin', description='goalkeeper'})</td>
-<td class="success">1.449s</td>
+<td class="success">2.700s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">addContactPositiveFromDataProviderTest[0](John, Parker, 4561239789, JPa@gm.com, Paris, forward)</td>
-<td class="success">1.421s</td>
+<td class="success">2.722s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">addContactPositiveFromDataProviderTest[1](John2, Parker, 4567891231, JPa2@gm.com, Paris, forward)</td>
-<td class="failures">12.053s</td>
+<td class="failures">12.019s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">addContactPositiveFromDataProviderTest[2](John3, Parker, 4567891232, JPa3@gm.com, Paris, forward)</td>
-<td class="success">1.373s</td>
+<td class="success">2.631s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">addContactPositiveTest</td>
-<td class="failures">13.045s</td>
+<td class="failures">12.013s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -371,29 +371,37 @@ Session ID: 600fd9be23d450593d476c081a5dd90c
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>13:58:14.686 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveTest with data: []
-13:58:40.365 [Test worker] ERROR com.PhoneBook.tests.TestBase -- FAILED: addContactPositiveTest screenshot: C:\Users\yarus\GitHub\PhoneBook\screenshots\screen1681894720360.png
-13:58:40.365 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:58:55.935 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactNegativeTest
-13:58:55.935 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:58:55.940 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test checkHeaderHomeLinkTest with data: []
-13:59:11.976 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactPositiveFromDataProviderTest
-13:59:11.976 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:11.976 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromDataProviderTest with data: [John2, Parker, 4567891231, JPa2@gm.com, Paris, forward]
-13:59:36.645 [Test worker] ERROR com.PhoneBook.tests.TestBase -- FAILED: addContactPositiveFromDataProviderTest screenshot: C:\Users\yarus\GitHub\PhoneBook\screenshots\screen1681894776640.png
-13:59:36.645 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:36.646 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromDataProviderTest with data: [John3, Parker, 4567891232, JPa3@gm.com, Paris, forward]
-13:59:38.252 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactPositiveFromDataProviderTest
-13:59:38.252 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:38.253 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test checkHeaderAboutLinkTest with data: []
-13:59:52.764 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactPositiveFromCSVFileTest
-13:59:52.765 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-13:59:52.766 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromCSVFileTest with data: [`Contact`{name='Max', lastName='Rabbe', phone='98765432126', email='max@gm.co', address='Berlin', description='goalkeeper'}]
-14:00:17.355 [Test worker] ERROR com.PhoneBook.tests.TestBase -- FAILED: addContactPositiveFromCSVFileTest screenshot: C:\Users\yarus\GitHub\PhoneBook\screenshots\screen1681894817347.png
-14:00:17.355 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
-14:00:17.355 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromCSVFileTest with data: [`Contact`{name='Tony', lastName='Cross', phone='98765432128', email='tony@gm.co', address='Berlin', description='goalkeeper'}]
-14:00:19.095 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactPositiveFromCSVFileTest
-14:00:19.095 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+<pre>17:59:47.777 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveTest with data: []
+18:00:12.329 [Test worker] ERROR com.PhoneBook.tests.TestBase -- FAILED: addContactPositiveTest screenshot: C:\Users\yarus\GitHub\PhoneBook\screenshots\screen1681995612329.png
+18:00:12.329 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:00:30.459 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactNegativeTest
+18:00:30.459 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:00:30.460 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test checkHeaderHomeLinkTest with data: []
+18:00:48.593 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactPositiveFromDataProviderTest
+18:00:48.593 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:00:48.593 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromDataProviderTest with data: [John2, Parker, 4567891231, JPa2@gm.com, Paris, forward]
+18:01:13.087 [Test worker] ERROR com.PhoneBook.tests.TestBase -- FAILED: addContactPositiveFromDataProviderTest screenshot: C:\Users\yarus\GitHub\PhoneBook\screenshots\screen1681995673083.png
+18:01:13.087 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:01:13.087 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromDataProviderTest with data: [John3, Parker, 4567891232, JPa3@gm.com, Paris, forward]
+18:01:16.681 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactPositiveFromDataProviderTest
+18:01:16.681 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:01:16.681 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test checkHeaderAboutLinkTest with data: []
+18:01:34.093 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactPositiveFromCSVFileTest
+18:01:34.093 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:01:34.093 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromCSVFileTest with data: [`Contact`{name='Max', lastName='Rabbe', phone='98765432126', email='max@gm.co', address='Berlin', description='goalkeeper'}]
+18:01:58.597 [Test worker] ERROR com.PhoneBook.tests.TestBase -- FAILED: addContactPositiveFromCSVFileTest screenshot: C:\Users\yarus\GitHub\PhoneBook\screenshots\screen1681995718582.png
+18:01:58.597 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+18:01:58.597 [Test worker] INFO  com.PhoneBook.tests.TestBase -- Start test addContactPositiveFromCSVFileTest with data: [`Contact`{name='Tony', lastName='Cross', phone='98765432128', email='tony@gm.co', address='Berlin', description='goalkeeper'}]
+18:02:02.281 [Test worker] INFO  com.PhoneBook.tests.TestBase -- PASSED: addContactPositiveFromCSVFileTest
+18:02:02.281 [Test worker] INFO  com.PhoneBook.tests.TestBase -- ===================================================
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://telranedu.web.app.&quot;
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://telranedu.web.app.&quot;
 </pre>
 </span>
 </div>
@@ -405,7 +413,7 @@ Session ID: 600fd9be23d450593d476c081a5dd90c
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.0.2</a> at Apr 19, 2023, 2:00:32 PM</p>
+<a href="http://www.gradle.org">Gradle 8.0.2</a> at Apr 20, 2023, 6:02:16 PM</p>
 </div>
 </div>
 </body>
